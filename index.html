@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <title>Виготовдення кліше методом гравіровки та травлення</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="customcss/index.css" rel="stylesheet" />
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <header class="d-flex justify-content-between align-items-center">
+      <button
+        class="hamburger-button"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasRight"
+        aria-controls="offcanvasRight"
+      >
+        <i class="bi bi-list display-6"></i>
+      </button>
+
+      <!-- Collapsed navbar -->
+      <div
+        class="offcanvas offcanvas-end"
+        tabindex="-1"
+        id="offcanvasRight"
+        aria-labelledby="offcanvasRightLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 id="offcanvasRightLabel"></h5>
+          <button
+            type="button"
+            class="btn-close btn-close-white text-reset"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="offcanvas-navbar">
+            <li class="activemenu first-li">
+              <a href="#">Головна</a>
+            </li>
+            <li class="">
+              <a href="#">Про нас</a>
+            </li>
+            <li onclick="prodDropdown()">
+              <a href="javascript:void(0)"
+                >Продукти
+                <i id="chevron" class="bi bi-chevron-down float-end"></i
+              ></a>
+            </li>
+            <div class="offcanvas-dropmenu" id="products">
+              <li><a href="#">Травлені кліше</a></li>
+              <li><a href="#">Гравіровані кліше</a></li>
+              <li><a href="#">Контрматриці</a></li>
+            </div>
+
+            <li class="">
+              <a href="#">Замовлення</a>
+            </li>
+            <li class="">
+              <a href="#">Контакти</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <p>виготовлення кліше методом гравіювання та травлення</p>
+      <img src="images/logo_klishe.svg" width="250px" />
+    </header>
+    <!-- Navigation menu -->
+    <nav class="nav-custom d-flex justify-content-center sticky-top">
+      <ul class="list-inline ms-0">
+        <li class="list-inline-item activemenu">
+          <a href="#">Головна</a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#">Про нас</a>
+        </li>
+        <li class="list-inline-item dropdown-custom">
+          <a href="javascript:void(0)"
+            >Продукти <i class="bi bi-chevron-down"></i
+          ></a>
+          <div class="dropdowncontent-custom">
+            <a href="#">Травлені кліше</a>
+            <a href="#">Гравіровані кліше</a>
+            <a href="#">Контрматриці</a>
+          </div>
+        </li>
+        <li class="list-inline-item">
+          <a href="#">Замовлення</a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#">Контакти</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="parallax">
+      <div class="parallax-layer parallax-back">
+        <img class="jumbotron" src="images/jumbotron.jpg" />
+      </div>
+      <div class="parallax-layer parallax-base">
+        <!-- Stamp types block -->
+        <div class="title container">
+          <div
+            class="row row-cols-lg-3 row-cols-md-3 row-cols-sm-1 row-cols-1 shadow"
+          >
+            <div class="col card card-custom">
+              <img
+                src="images/etchingIcon.png"
+                class="card-img-top card-image mx-auto"
+                alt="..."
+              />
+              <div class="card-body">
+                <h3 class="card-title text-center h-custom">Травлені кліше</h3>
+                <p class="card-text text-center">
+                  Метод виготовлення - травлення магнієвих плстин товщиною 7мм,
+                  4мм, 3мм, 2мм, 1,7мм.
+                </p>
+              </div>
+            </div>
+            <div class="col card card-custom">
+              <img
+                src="images/millingMachineIcon.png"
+                class="card-img-top card-image mx-auto"
+                alt="..."
+              />
+              <div class="card-body">
+                <h3 class="card-title text-center h-custom">Гравіровані кліше</h3>
+                <p class="card-text text-center">
+                  Метод виготовлення - об'ємне гравіювання на гравірувальному
+                  верстаті.
+                </p>
+              </div>
+            </div>
+            <div class="col card card-custom">
+              <img
+                src="images/contrmatrixIcon.png"
+                class="card-img-top card-image mx-auto"
+                alt="..."
+              />
+              <div class="card-body">
+                <h3 class="card-title text-center h-custom">Контрматриці</h3>
+                <p class="card-text text-center">
+                  Виготовлення контрматриць з полімерів для конгреву на основі
+                  матриці.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Gallery -->
+          <h3 class="mt-5 h-custom bg-white bg-opacity-50">Наші роботи</h3>
+          <div class="row">
+            <div class="col-md-4 g-4">
+              <div class="card rounded-0 shadow-sm">
+                <img src="images/IMG_28-300x200.jpg" />
+              </div>
+            </div>
+            <div class="col-md-4 g-4">
+              <div class="card rounded-0 shadow-sm">
+                <img src="images/IMG_28-300x200.jpg" />
+              </div>
+            </div>
+            <div class="col-md-4 g-4">
+              <div class="card rounded-0 shadow-sm">
+                <img src="images/IMG_28-300x200.jpg" />
+              </div>
+            </div>
+          </div>
+            <div class="row">
+              <div class="col-md-4 g-4">
+                <div class="card rounded-0 shadow-sm">
+                  <img src="images/IMG_28-300x200.jpg" />
+                </div>
+              </div>
+              <div class="col-md-4 g-4">
+                <div class="card rounded-0 shadow-sm">
+                  <img src="images/IMG_28-300x200.jpg" />
+                </div>
+              </div>
+              <div class="col-md-4 g-4">
+                <div class="card rounded-0 shadow-sm">
+                  <img src="images/IMG_28-300x200.jpg" />
+                </div>
+              </div>
+            </div>
+            <div class="divider"></div>
+            <div class="row justify-content-center">
+              <div class="col-md-8 g-4 base-font">
+                <h3 class="mt-5 h-custom bg-white bg-opacity-50">Про нас</h3>
+                Наша компанія спеціалізується на виготовленні магнієвих кліше методом травлення 
+                та латунних кліше методом гравіювання. Також пропонуємо вам гравіювання на дереві 
+                та інших матеріалах. Більше інформації ви можете отримати у відповідних розділах 
+                на сайті або, зв'язавшись з нами.
+                <h3 class="mt-5 h-custom bg-white bg-opacity-50">Наші переваги</h3>
+                <ul class="list-unstyled">
+                <li><i class="bi bi-cursor-fill cursor-rotate"></i>Високоточні гравіювальні центри</li>
+                <li><i class="bi bi-cursor-fill cursor-rotate"></i>Якісний спеціальний матеріал</li>
+                <li><i class="bi bi-cursor-fill cursor-rotate"></i>Технічна підтримка</li>
+                <li><i class="bi bi-cursor-fill cursor-rotate"></i>Доставлення по всій Україні</li>
+              </ul>
+              </div>
+              <div class="col-md-4 g-4">
+                <img src="images/homepage_engraving.jpg">  
+              </div>
+            </div>
+            <div class="d-grid col-md-4 g-4 mx-auto">
+              <button type="button" class="btn btn-primary btn-lg btn-custom">Зробити замовлення</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-custom base-font">
+        <ul class="nav justify-content-end">
+        <li class="nav-item pe-5">Телефонуйте нам:  +38 (044) 428-61-74</li>
+        <li class="nav-item pe-5">e-mail: klishe@klishe.com.ua</li>
+        </ul>
+      </div>  
+    </div>
+    <script>
+      function prodDropdown() {
+        document.getElementById("products").classList.toggle("show");
+        document.getElementById("chevron").classList.toggle("bi-chevron-up");
+      }
+    </script>
+  </body>
+</html>
